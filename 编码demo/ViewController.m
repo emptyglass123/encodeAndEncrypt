@@ -59,7 +59,7 @@
     
     NSString *testString = @"012";
     NSString *aeskey = [AES getRandomKey];
-    NSString *encrpy = [AES AES:testString Random:aeskey];
+    NSString *encrpy = [AES AES:testString RandomKey:aeskey];
     NSString *descrypt = [AES AESDecrypt:encrpy RandomKey:aeskey];
     
     NSLog(@"%@%@%@",testString,encrpy,descrypt);
